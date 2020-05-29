@@ -33,7 +33,7 @@ var html = `
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request));
 });
-
+tools/cache/index.go
 function unauthorized() {
   return new Response('401 NOT AUTHORIZED', {
     headers: {
